@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #000814;  
+
+}
+
+span{
+    background-color: #001D3D;
+}
+
