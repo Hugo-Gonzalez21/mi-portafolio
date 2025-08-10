@@ -7,8 +7,8 @@ const Home: React.FC = () => {
                     <h1 className='text-6xl font-extrabold text-center'>Ingeniero en Informática</h1>
                     <h1 className='text-6xl font-bold text-[#FFC300] text-center'>Hugo González</h1>
                     <div className="flex gap-4 mt-2 ">
-                        <a href="https://github.com/Hugo-Gonzalez21" target="_blank" rel="noopener noreferrer"  className="inline-block p-2 rounded-full hover:bg-[#FFC300]" 
-                        aria-label="GitHub">
+                        <a href="https://github.com/Hugo-Gonzalez21" target="_blank" rel="noopener noreferrer" className="inline-block p-2 rounded-full hover:bg-[#FFC300]"
+                            aria-label="GitHub">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="32"
@@ -20,7 +20,7 @@ const Home: React.FC = () => {
                             </svg>
                         </a>
                         <a
-                            href="https://www.linkedin.com/in/hugo-gonzalez21" target="_blank" rel="noopener noreferrer" className="inline-block p-2 rounded-full hover:bg-[#FFC300]" 
+                            href="https://www.linkedin.com/in/hugo-gonzalez21" target="_blank" rel="noopener noreferrer" className="inline-block p-2 rounded-full hover:bg-[#FFC300]"
                             aria-label="LinkedIn"
                         >
                             <svg
@@ -37,7 +37,8 @@ const Home: React.FC = () => {
                 </div>
             </section>
             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-            <section className="relative  flex justify-center items-center to-indigo-600 text-white p-8">
+            {/* Seccion acerca de mi */}
+            <section className="relative justify-center flex  to-indigo-600 text-white p-8">
                 <div className="flex flex-col items-center" >
                     <h1 id='about' className="text-4xl font-extrabold text-white mb-4 text-center">
                         ¡Acerca de mi!
@@ -46,21 +47,60 @@ const Home: React.FC = () => {
                         Estudiante de Ingeniería en Informática en Duoc UC, apasionado por el desarrollo web y móvil.
                         Actualmente busco una oportunidad laboral para adquirir experiencia y desarrollar mis habilidades en el ámbito profesional.
                     </p>
+                </div>
+            </section>
 
-                    <div className='flex flex-wrap justify-center mt-4 gap-4 w-[650px]'>
-                        <span className='font-bold rounded-full p-2 px-4 '>HTML</span>
-                        <span className='font-bold rounded-full p-2 px-4 '>CSS</span>
-                        <span className='font-bold rounded-full p-2 px-4 '>Bootstrap</span>
-                        <span className='font-bold rounded-full p-2 px-4 '>Tailwind CSS</span>
-                        <span className='font-bold rounded-full p-2 px-4 '>React</span>
-                        <span className='font-bold rounded-full p-2 px-4 '>TypeScript</span>
-                        <span className='font-bold rounded-full p-2 px-4 '>Django</span>
+            <section className="relative flex flex-row justify-center items-stretch gap-8  to-indigo-600 text-white p-8">
+
+                <div className="flex flex-col items-center bg-gray-900 rounded-lg p-6 w-full max-w-md">
+                    <div className="flex items-center gap-3 mb-4">
+                        <h2 className="text-2xl font-bold text-[#FFC300]">Herramientas</h2>
+                    </div>
+                    <div className="flex flex-wrap justify-center gap-2">
+                        <span className="bg-gray-700 text-white text-sm px-3 py-1 rounded-full shadow-md">HTML</span>
+                        <span className="bg-gray-700 text-white text-sm px-3 py-1 rounded-full shadow-md">Django</span>
+                        <span className="bg-gray-700 text-white text-sm px-3 py-1 rounded-full shadow-md">Python</span>
+                        <span className="bg-gray-700 text-white text-sm px-3 py-1 rounded-full shadow-md">Bootstrap</span>
+                    </div>
+                </div>
+
+                <div className="flex flex-col items-center bg-gray-900 rounded-lg p-6 w-full max-w-md">
+                    <div className="flex items-center gap-3 mb-4">
+                        <h2 className="text-2xl font-bold text-[#FFC300]">Aprendiendo</h2>
+                    </div>
+                    <div className="flex flex-wrap justify-center gap-2">
+                        <span className="bg-gray-700 text-white text-sm px-3 py-1 rounded-full shadow-md">React</span>
+                        <span className="bg-gray-700 text-white text-sm px-3 py-1 rounded-full shadow-md">Tailwind CSS</span>
+                        <span className="bg-gray-700 text-white text-sm px-3 py-1 rounded-full shadow-md">TypeScript</span>
+                    </div>
+                </div>
+            </section>
+            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+
+            <section className="relative flex flex-col items-center to-indigo-600 text-white p-8">
+                <h1 id='projects' className="text-4xl font-extrabold text-white mb-8 text-center">
+                    ¡Proyectos!
+                </h1>
+                <div className="flex flex-row justify-center items-stretch gap-8">
+                    {/* Card Proyecto 1 */}
+                    <div className="bg-gray-900 rounded-lg shadow-lg p-6 text-[#FFC300] h-80 w-80 flex flex-col justify-between">
+                        <div>
+                            <h3 className="text-xl font-bold mb-2">Skate Shop</h3>
+                            <p className="mb-4 text-white">
+                                Plataforma de comercio para venta de productos de skate, desarrollada con HTML, CSS y JavaScript.
+                            </p>
+                        </div>
+                        <img src="./assets/skate-shop.png" alt="Skate Shop" className="w-full h-32 object-cover rounded-md mb-2" />
+                        <button className="bg-gray-700 p-2 rounded-full  hover:bg-gray-500 transition-all duration-200">
+                            <a href="https://skate-shop-two.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                className="text-white font-semibold hover:underline self-start">
+                                Ver más
+                            </a></button>
                     </div>
 
                 </div>
             </section>
-            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-            
+
         </>
 
 
