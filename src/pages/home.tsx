@@ -5,7 +5,7 @@ const Home: React.FC = () => {
             <section className="relative h-[650px] flex justify-center items-center to-indigo-600 text-white p-8">
                 <div className="flex flex-col items-center gap-6">
                     <h1 className='text-6xl font-extrabold text-center'>Ingeniero en Informática</h1>
-                    <h1 className='text-6xl font-bold text-[#FFC300] text-center'>Hugo González</h1>
+                    <h1 className='text-6xl font-bold text-[#FFC300] text-center'>Camilo Chavez</h1>
                     <div className="flex gap-4 mt-2 ">
                         <a href="https://github.com/Hugo-Gonzalez21" target="_blank" rel="noopener noreferrer" className="inline-block p-2 rounded-full hover:bg-[#FFC300]"
                             aria-label="GitHub">
